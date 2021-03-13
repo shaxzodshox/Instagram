@@ -55,6 +55,9 @@
                             <state key="normal" title="Sign in">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="openHomeController:" destination="-1" eventType="touchUpInside" id="eJf-hs-s7l"/>
+                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="p48-Dy-NNc">
                             <rect key="frame" x="82.5" y="274" width="209" height="29"/>
@@ -71,6 +74,9 @@
                                     <state key="normal" title="Sign Up">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="openSIgnUpController:" destination="-1" eventType="touchUpInside" id="Bju-F7-7t8"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>

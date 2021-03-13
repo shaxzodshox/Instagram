@@ -7,23 +7,25 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    
+    //MARK: - Navigation
+    @IBAction func openHomeController(_ sender: Any) {
+        sceneDelegate().callHomeController()
     }
-    */
-
+    
+    @IBAction func openSIgnUpController(_ sender: Any) {
+        let vc = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
+        let nc = UINavigationController(rootViewController: vc)
+        self.present(nc, animated: true, completion: nil)
+    }
+    
 }
