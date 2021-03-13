@@ -12,7 +12,6 @@ class SignInViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
 
    
@@ -22,7 +21,7 @@ class SignInViewController: BaseViewController {
         sceneDelegate().callHomeController()
     }
     
-    @IBAction func openSIgnUpController(_ sender: Any) {
+    @IBAction func openSignUpController(_ sender: Any) {
         let vc = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
         let nc = UINavigationController(rootViewController: vc)
         self.present(nc, animated: true, completion: nil)

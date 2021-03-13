@@ -14,7 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        initNavigation()
         return true
+    }
+    
+    func initNavigation(){
+        UINavigationBar.appearance().backgroundColor = UIColor.white
+        UINavigationBar.appearance().tintColor = UIColor.black //icon color
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black] //title color
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
     }
 
     // MARK: UISceneSession Lifecycle
